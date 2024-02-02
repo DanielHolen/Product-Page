@@ -1,0 +1,211 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.attribution {
+  display: none;
+}
+
+/* Body + Fonts */
+
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+
+body {
+  align-items: center;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  justify-content: center;
+}
+
+/* images */
+
+#img-desktop {
+  display: none;
+}
+
+#img-mobile {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 45%;
+}
+
+/* Card */
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  width: 90vw;
+}
+
+/* Pricing panel */
+
+.pricing-panel {
+  display: flex;
+  height: 55%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1em 1.5em;
+}
+
+h2 {
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+h1 {
+  font-family: 'Fraunces', serif;
+  font-size: 2em;
+}
+
+p {
+  color: hsl(228, 12%, 48%);
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+
+.pricing {
+  align-items: center;
+  display: flex;
+}
+
+#discount-price {
+  color: hsl(158, 36%, 37%);
+  font-family: 'Fraunces', serif;
+  font-size: 2em;
+  margin-right: 0.5em;
+}
+
+#original-price {
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+button {
+  align-items: center;
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0.7em 1em;
+  width: 100%;
+}
+
+svg {
+  margin-right: 1em;
+}
+
+
+@media (min-width: 1300px) {
+  .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50vh;
+    width: 50vw;
+    max-width: 720px;
+  }
+
+  #img-desktop {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: block;
+    height: 100%;
+  }
+  
+  #img-mobile {
+    display: none;
+  }
+
+  .pricing-panel {
+    height: 95%;
+    justify-content: space-evenly;
+    padding: 2em;
+  }
+
+  button {
+    padding: 1em 2em;
+    font-size: 1.3em;
+  }
+
+  #discount-price {
+    font-size: 2.5em;
+  }
+  
+  #original-price {
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+  }
+
+  p {
+    font-size: 1.3em;
+  }
+
+  h1 {
+    font-size: 2.4em;
+  }
+}
